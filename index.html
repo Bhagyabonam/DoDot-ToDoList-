@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List with Time Picker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="logo-header">
+  <h1 class="styled-dodot">
+    <span class="dot-circle">●</span> Do<span class="highlight-dot">Dot</span>
+  </h1>
+  <p class="tagline">Organize smart. Live smooth.</p>
+</header>
+
+
+
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <input type="text" id="taskTime" placeholder="Select time" readonly onclick="openClock()" />
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <div class="task-sections">
+    <div>
+      <h2>🔵 Pending Tasks</h2>
+      <ul id="pendingList" class="task-list"></ul>
+    </div>
+
+    <div>
+      <h2>🟢 Completed Tasks</h2>
+      <ul id="completedList" class="task-list"></ul>
+    </div>
+  </div>
+
+  <!-- Clock Modal -->
+  <div class="modal hidden" id="clockModal">
+    <div class="clock-popup">
+      <h3>Select Time</h3>
+      <div class="clock-face">
+        <label>Hour:
+          <input type="number" id="hour" min="1" max="12" value="6">
+        </label>
+        <label>Minute:
+          <input type="number" id="minute" min="0" max="59" value="00">
+        </label>
+        <label>AM/PM:
+          <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </label>
+      </div>
+      <div class="clock-buttons">
+        <button onclick="setTime()">OK</button>
+        <button onclick="closeClock()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
