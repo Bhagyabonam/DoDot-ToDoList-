@@ -64,7 +64,17 @@ function createTaskItem(text, time, isCompleted) {
 
   taskLeft.appendChild(checkbox);
   taskLeft.appendChild(label);
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "❌";
+  deleteBtn.style.border = "none";
+  deleteBtn.style.background = "transparent";
+  deleteBtn.style.cursor = "pointer";
+  deleteBtn.style.fontSize = "18px";
+  deleteBtn.style.marginLeft = "auto";
+  deleteBtn.onclick = () => li.remove();
+
   li.appendChild(taskLeft);
+  li.appendChild(deleteBtn);
 
   return li;
 }
