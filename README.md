@@ -27,5 +27,5 @@ DoDot is a clean, user-friendly To-Do List app that lets you add tasks with a ti
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/yourusername/DoDot-ToDoList.git
+git clone https://github.com/Bhagyabonam/DoDot-ToDoList.git
 cd DoDot-ToDoList
