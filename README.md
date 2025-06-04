@@ -15,13 +15,6 @@ DoDot is a clean, user-friendly To-Do List app that lets you add tasks with a ti
 - 📱 Fully responsive – works great on mobile too!
 - 🎨 Smooth and minimal UI with subtle animations.
 
----
-
-## 📸 Preview
-
-![DoDot Preview](screenshot.png) <!-- You can replace this with an actual screenshot from your project -->
-
----
 
 ## 🚀 Getting Started
 
